@@ -27,7 +27,7 @@ def main():
     player2 = 'O'
     turn = False  # False for player 1's turn, True for player 2's turn. Player 1 first.
     print("X = Player 1")
-    print("O = Player 2")
+    print("O = Player 2") # Player 2 is computer
     for n in range(9):
         turn = not turn  # Switch turns
         if not turn:
