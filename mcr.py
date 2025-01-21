@@ -32,8 +32,13 @@ def main():
             print("Player 1: ", end="")
         else:
             print("Player 2: ", end="")
-        print("Which cell to mark? i:[1..3], j:[1..3]: ")
+        print("Which cell to mark? i:[1..3], j:[1..3]:(0 0 to end the game)")
         i, j = map(int, input().split())
+
+        # exit the game
+        if i == 0 & j == 0:
+            break
+            
         i -= 1
         j -= 1
         if not turn:
